@@ -533,6 +533,12 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 0.6rem;
 }
 
+.add-cart a{
+  text-decoration:none;
+  color:#fff;
+}
+
+
 /* product-description section */
 .product-description {
   padding: 2rem 2.5rem;
