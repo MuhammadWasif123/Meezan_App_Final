@@ -10,16 +10,6 @@ document.addEventListener('DOMContentLoaded',function(){
 })
 
 
-// document.addEventListener('DOMContentLoaded',function(){
-//     const smallBike=document.getElementById('small-div');
-//     if(smallBike){
-//         smallBike.addEventListener('onClick',function(){
-//             smallBike.classList.add('new-border');
-           
-//            })
-//     }
-// })
-
 function increaseQuantity() {
     const quantityInput = document.getElementById('quantity');
     quantityInput.value = parseInt(quantityInput.value) + 1;
@@ -53,7 +43,7 @@ function showSuccessPrompt() {
 }
 
 function redirectToUrl() {
-    window.location.href = "file:///home/rizwan/Documents/Wasif_Work/Meezan_Application_updated/Meezan_Application_28Sep/Meezan_Application/products.html"; 
+    window.location.href = "https://meezan-demo.netlify.app/products.html"; 
 }
 //  Functionality to handle Terms and Conditions
 function toggleOrderButton() {
@@ -65,7 +55,7 @@ function toggleOrderButton() {
 // Functionality of the Place Order Button
 function showSuccessPrompt() {
     alert("Items ordered successfully!");
-    window.location.href = "file:///home/rizwan/Documents/Wasif_Work/Meezan_Application_updated/Meezan_Application_28Sep/Meezan_Application/index.html"; 
+    window.location.href = "https://meezan-demo.netlify.app/"; 
 }
 
 

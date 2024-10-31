@@ -7,6 +7,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
 /* Top-Header Section Styling */
 
 .flex-display2 {
@@ -532,6 +533,12 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 0.6rem;
 }
 
+.add-cart a{
+  text-decoration:none;
+  color:#fff;
+}
+
+
 /* product-description section */
 .product-description {
   padding: 2rem 2.5rem;
@@ -1025,8 +1032,6 @@ tr:nth-child(even) {
 }
 
 
-
-
 /* Button Reusable Styling */
 
 .button-anchor {
@@ -1058,7 +1063,6 @@ tr:nth-child(even) {
 .form-check-label{
   text-transform: capitalize;
 }
-
 
 
 /* Login Page Styling Starts */
