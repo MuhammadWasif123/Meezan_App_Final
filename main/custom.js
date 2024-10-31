@@ -1,17 +1,24 @@
-const cnicInput = document.getElementById('cnic');
-cnicInput.addEventListener('input', function () {
-    if (this.value.length > 13) {
-        this.value = this.value.slice(0, 13);
+document.addEventListener('DOMContentLoaded',function(){
+    const cnicInput=document.getElementById('cnic1');
+    if(cnicInput){
+        cnicInput.addEventListener('input',function(){
+            if (this.value.length > 13){
+                this.value = this.value.slice(0,13);
+            }
+        })
     }
-});
-
-
-
-const smallBike=document.getElementById("small-div")
-smallBike.addEventListener('onClick',function(){
-    smallBike.classList.add('new-border');
-
 })
+
+
+// document.addEventListener('DOMContentLoaded',function(){
+//     const smallBike=document.getElementById('small-div');
+//     if(smallBike){
+//         smallBike.addEventListener('onClick',function(){
+//             smallBike.classList.add('new-border');
+           
+//            })
+//     }
+// })
 
 function increaseQuantity() {
     const quantityInput = document.getElementById('quantity');
@@ -60,5 +67,23 @@ function showSuccessPrompt() {
     alert("Items ordered successfully!");
     window.location.href = "file:///home/rizwan/Documents/Wasif_Work/Meezan_Application_updated/Meezan_Application_28Sep/Meezan_Application/index.html"; 
 }
+
+
+// JS for the Timer Icon
+
+let countdown = 20; 
+
+const timerElement = document.getElementById("timer1");
+
+const countdownInterval = setInterval(() => {
+  countdown -= 1;
+  timerElement.textContent = countdown;
+
+  if (countdown <= 0) {
+    clearInterval(countdownInterval);
+    timerElement.textContent = "Done";
+  }
+}, 1000); // Update every 1 second
+
 
 console.log("JS WORKING")
